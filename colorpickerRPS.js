@@ -60,6 +60,8 @@ function rgb2hsl(rgb) {
 
     h *= 60;
   }
-
+h = h.toFixed(5);
+  s = (s * 100).toFixed(5);
+  l = (l * 100).toFixed(5);
   return { h, s, l };
 }
