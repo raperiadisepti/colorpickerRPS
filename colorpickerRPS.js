@@ -10,8 +10,8 @@ colorInput.addEventListener('input', () => {
   const hsl = rgb2hsl(rgb);
 
   hexCode.textContent = hex;
-  rgbCode.textContent = `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`;
-  hslCode.textContent = `hsl(${hsl.h}, ${hsl.s}%, ${hsl.l}%)`;
+  rgbCode.textContent = `(${rgb.r}, ${rgb.g}, ${rgb.b})`;
+  hslCode.textContent = `(${hsl.h}, ${hsl.s}%, ${hsl.l}%)`;
 });
 
 function hex2rgb(hex) {
